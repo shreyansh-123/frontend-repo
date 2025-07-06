@@ -10,7 +10,7 @@ async function lookupIOCs() {
 
   const query = encodeURIComponent(iocs.join(','));
   const url = `https://backend-repo-7wg1.onrender.com/lookup?query=${query}&vt=${vt}&abuse=${abuse}&shodan=${shodan}&ipqs=${ipqs}`;
-
+  console.log('url',url);
   const resultsDiv = document.getElementById('results');
   const summaryDiv = document.getElementById('summary');
 
