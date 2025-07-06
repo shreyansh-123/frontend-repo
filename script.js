@@ -9,7 +9,7 @@ async function lookupIOCs() {
   const ipqs = document.getElementById('ipqsKey').value.trim();
 
   const query = encodeURIComponent(iocs.join(','));
-  const url = `https://threat-intel-tmjz.onrender.com/lookup?query=${query}&vt=${vt}&abuse=${abuse}&shodan=${shodan}&ipqs=${ipqs}`;
+  const url = `https://backend-repo-7wg1.onrender.com/lookup?query=${query}&vt=${vt}&abuse=${abuse}&shodan=${shodan}&ipqs=${ipqs}`;
 
   const resultsDiv = document.getElementById('results');
   const summaryDiv = document.getElementById('summary');
